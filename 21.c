@@ -1,6 +1,6 @@
 #include<stdio.h>
  
-int Fib(int);
+int Fibo(int);
  
 int main()
 {
@@ -12,19 +12,19 @@ int main()
  
    for ( c = 1 ; c <= n ; c++ )
    {
-      printf("%d\n", Fib(i));
+      printf("%d\n", Fibo(i));
       i++; 
    }
  
    return 0;
 }
  
-int Fib(int n)
+int Fibo(int n)
 {
    if ( n == 0 )
       return 0;
    else if ( n == 1 )
       return 1;
    else
-      return ( Fib(n-1) + Fib(n-2) );
+      return ( Fibo(n-1) + Fibo(n-2) );
 } 
